@@ -1,0 +1,3716 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InfragisticsSL5.Controls.Reports.v14.2</name>
+    </assembly>
+    <members>
+        <member name="T:Infragistics.Controls.Reports.Primitives.ChartView">
+            <summary>
+            INTERNAL USE ONLY. Chart control.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ChartView.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.Primitives.ChartView"/> class.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.ChartView.ModelProperty">
+            <summary>
+            Model Dependency Property.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.ChartView.ClipRectangleProperty">
+            <summary>
+            ClipRectangle Dependency Property.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ChartView.Model">
+            <summary>
+            Gets or sets the model.
+            </summary>
+            <value>
+            The model.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ChartView.ClipRectangle">
+            <summary>
+            Gets or sets the clip rectangle.
+            </summary>
+            <value>
+            The clip rectangle.
+            </value>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.ClientExporterException">
+            <summary>
+            Class that encapsulates client exporter exceptions.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.ClientExporterException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.ClientExporterException"/> class.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.ClientExporterException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.ClientExporterException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.ClientExporterException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.ClientExporterException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.ClientExporter.ExportAsync(System.IO.Stream,System.String)">
+            <summary>
+            Exports the report to the specified target stream in the specified format.
+            </summary>
+            <param name="targetStream">The target stream.</param>
+            <param name="renderingFormat">The rendering format (PDF, XPS, Excel).</param>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.ClientExporter.Cancel">
+            <summary>
+            Cancels the export process.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.ClientExporter.ExportStarted">
+            <summary>
+            Event raised when report exporting is started.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.ClientExporter.ExportCompleted">
+            <summary>
+            Event raised when report exporting is finished.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.ClientExporter.ExportCanceled">
+            <summary>
+            Event raised when report exporting is canceled.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.ClientExporter.ExportProgress">
+            <summary>
+            Event raised when there is progress while exporting.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ClientExporter.DataSources">
+            <summary>
+            Gets or sets the data sources collection to be provided to the report, if any.
+            </summary>
+            <value>
+            The data sources.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ClientExporter.Parameters">
+            <summary>
+            Gets or sets the parameters collection to be provided to the report, if any.
+            </summary>
+            <value>
+            The parameters.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ClientExporter.EmbeddedFonts">
+            <summary>
+            Gets or sets Embedded Fonts for being able to use font embedding while exporting to PDF/XPS (Excel does not support font embedding). These fonts are not used in the viewer.
+            </summary>
+            <value>The page to set.</value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ClientExporter.AvailableFormats">
+            <summary>
+            Available formats for exporting.
+            </summary>        
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ClientExporter.DefinitionUri">
+            <summary>
+            Gets or sets the definition URI.
+            </summary>
+            <value>
+            The definition URI.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ClientExporter.DefinitionStream">
+            <summary>
+            Gets the stream associated to the report.
+            </summary>
+            <value>
+            The definition stream.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ClientExporter.ServiceEndpointUri">
+            <summary>
+            Gets or sets the service endpoint URI.
+            </summary>
+            <value>
+            The service endpoint URI.
+            </value>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.BindingContextPropagator">
+            <summary>
+            Base class to support binding context propagation and change notifications.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.BindingContextPropagator.OnPropertyChanged(System.String)">
+            <summary>
+            Used to raise the <see cref="E:Infragistics.Controls.Reports.BindingContextPropagator.PropertyChanged"/> event for the specified property name.
+            </summary>
+            <param name="propertyName">The name of the property that has changed.</param>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.BindingContextPropagator.RaisePropertyChangedEvent(System.String)">
+            <summary>
+            Raises the PropertyChanged event
+            </summary>
+            <param name="propertyName">The name of the property</param>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.BindingContextPropagator.PropertyChanged">
+            <summary>
+            Raised when a property has changed
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Infragistics.Reports.EmbeddedFontExtensions" -->
+        <member name="M:Infragistics.Reports.EmbeddedFontExtensions.AddFontData(Infragistics.Reports.EmbeddedFont,System.Byte[])">
+            <summary>
+            Adds font data to an embedded font. The font data represents a serialized True Type or True Type Collection.
+            </summary>
+            <param name="embeddedFont">Embedded Font to add the font to.</param>
+            <param name="fontData">The serialized font data.</param>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.DockPanel">
+            <summary>
+            Arranges child elements around the edges of the panel.  Optionally, 
+            last added child element can occupy the remaining space.
+            </summary>
+            <QualityBand>Stable</QualityBand>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.DockPanel.LastChildFillProperty">
+            <summary>
+            Identifies the
+            <see cref="P:Infragistics.UX.PatternBrowser.Controls.DockPanel.LastChildFill" />
+            dependency property.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.DockPanel.DockProperty">
+            <summary>
+            Identifies the
+            <see cref="T:System.Windows.Controls.Dock" />
+            attached property.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.DockPanel._ignorePropertyChange">
+            <summary>
+            A value indicating whether a dependency property change handler
+            should ignore the next change notification.  This is used to reset
+            the value of properties without performing any of the actions in
+            their change handlers.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.DockPanel.GetDock(System.Windows.UIElement)">
+            <summary>
+            Gets the value of the
+            <see cref="T:System.Windows.Controls.Dock" /> attached
+            property for the specified element.
+            </summary>
+            <param name="element">
+            The element from which the property value is read.
+            </param>
+            <returns>
+            The <see cref="T:System.Windows.Controls.Dock" /> property
+            value for the element.
+            </returns>        
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.DockPanel.SetDock(System.Windows.UIElement,System.Windows.Controls.Dock)">
+            <summary>
+            Sets the value of the
+            <see cref="T:System.Windows.Controls.Dock" /> attached
+            property for the specified element to the specified dock value.
+            </summary>
+            <param name="element">
+            The element to which the attached property is assigned.
+            </param>
+            <param name="dock">
+            The dock value to assign to the specified element.
+            </param>        
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.DockPanel.MeasureOverride(System.Windows.Size)">
+            <summary>
+            Measures the child elements of a
+            <see cref="T:Infragistics.UX.PatternBrowser.Controls.DockPanel" /> in preparation
+            for arranging them during the
+            <see cref="M:Infragistics.UX.PatternBrowser.Controls.DockPanel.ArrangeOverride(System.Windows.Size)" />
+            pass.
+            </summary>
+            <param name="constraint">
+            The area available to the
+            <see cref="T:Infragistics.UX.PatternBrowser.Controls.DockPanel" />.
+            </param>
+            <returns>
+            The desired size of the
+            <see cref="T:Infragistics.UX.PatternBrowser.Controls.DockPanel" />.
+            </returns>        
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.DockPanel.ArrangeOverride(System.Windows.Size)">
+            <summary>
+            Arranges the child elements of the
+            <see cref="T:Infragistics.UX.PatternBrowser.Controls.DockPanel" /> control.
+            </summary>
+            <param name="arrangeSize">
+            The area in the parent element that the
+            <see cref="T:Infragistics.UX.PatternBrowser.Controls.DockPanel" /> should use to
+            arrange its child elements.
+            </param>
+            <returns>
+            The actual size of the
+            <see cref="T:Infragistics.UX.PatternBrowser.Controls.DockPanel" /> after the child
+            elements are arranged. The actual size should always equal
+            <paramref name="arrangeSize" />.
+            </returns>        
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.DockPanel.OnDockPropertyChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            DockProperty property changed handler.
+            </summary>
+            <param name="d">UIElement that changed its Dock.</param>
+            <param name="e">Event arguments.</param>        
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.DockPanel.OnLastChildFillPropertyChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            LastChildFillProperty property changed handler.
+            </summary>
+            <param name="d">DockPanel that changed its LastChildFill.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.DockPanel.LastChildFill">
+            <summary>
+            Gets or sets a value indicating whether the last child element
+            added to a <see cref="T:Infragistics.UX.PatternBrowser.Controls.DockPanel" />
+            resizes to fill the remaining space.
+            </summary>
+            <value>
+            True if the last element added resizes to fill the remaining space,
+            false to indicate the last element does not resize. The default is
+            true.
+            </value>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.ExpandableStackPanel">
+            <summary>
+            Implements a panel which makes elements appear / disappear according with the current width.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.ExpandableStackPanel.HiddenProperty">
+            <summary>
+            Identifies the Hidden attached dependency property.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.ExpandableStackPanel.ExpandedProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.Primitives.ExpandableStackPanel.Expanded"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.ExpandableStackPanel.NonExpandedHeightProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.Primitives.ExpandableStackPanel.NonExpandedHeight"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.ExpandableStackPanel.ExtrasElementProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.Primitives.ExpandableStackPanel.ExtrasElement"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.ExpandableStackPanel.ExtrasOffsetProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.Primitives.ExpandableStackPanel.ExtrasOffset"/> dependency property.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ExpandableStackPanel.IsHidden(System.Windows.DependencyObject)">
+            <summary>
+            Gets the value for the Hidden attached dependency property.
+            </summary>
+            <param name="obj">The dependency object.</param>
+            <returns><see value="true"/> if Hidden, <see value="false"/> otherwise.</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ExpandableStackPanel.SetHidden(System.Windows.DependencyObject,System.Boolean)">
+            <summary>
+            Sets the value for the Hidden attached dependency property.
+            </summary>
+            <param name="obj">The dependency object.</param>
+            <param name="value">The value to set.</param>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ExpandableStackPanel.#ctor">
+            <summary>
+            Initializes a new instance of the ExpandableStackPanel class.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ExpandableStackPanel.Expanded">
+            <summary>
+            Gets / sets if the panel is in expanded mode. That means that all the elements can be displayed given the current width.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ExpandableStackPanel.NonExpandedHeight">
+            <summary>
+            Gets / sets the non expanded panel height.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ExpandableStackPanel.ExtrasElement">
+            <summary>
+            Gets / sets the <see cref="T:System.Windows.FrameworkElement"/> that will appear when all the elements do not fit given the current panel width.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ExpandableStackPanel.ExtrasOffset">
+            <summary>
+            Gets / sets the space in pixels between the last visible element and the ExtrasElement element.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ExpandableStackPanel.InvisibleElements">
+            <summary>
+            Returns an enumeration which contains all the elements that cannot be displayed given the current panel width.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.ExportProgressControl">
+            <summary>
+            Control that shows Export progress.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.ExportProgressControl.ProgressProperty">
+            <summary>
+            Progress percentage dependency property.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.ExportProgressControl.IsIndeterminateProperty">
+            <summary>
+            IsIndeterminate dependency property.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ExportProgressControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.Primitives.ExportProgressControl"/> class.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ExportProgressControl.OnApplyTemplate">
+            <summary>
+            When overridden in a derived class, is invoked whenever application code or internal processes call <see cref="!:System.Windows.FrameworkElement.ApplyTemplate"/>.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ExportProgressControl.Progress">
+            <summary>
+            Gets or sets the progress percentage.
+            </summary>
+            <value>
+            The progress percentage (range: 0 to 100).
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ExportProgressControl.IsIndeterminate">
+            <summary>
+            Gets or sets the IsIndeterminate property to the inner progress bar.
+            </summary>
+            <value>
+            True if indeterminate, false otherwise.
+            </value>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.ImageRendererControl">
+            <summary>
+            Renders an image within an Infragistics Report.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.ImageRendererControl.StretchProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.Primitives.ImageRendererControl.Stretch"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.ImageRendererControl.ModelProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.Primitives.ImageRendererControl.Model"/> dependency property.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ImageRendererControl.#ctor">
+            <summary>
+            Initializes a new instance of the ImageRendererControl class.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ImageRendererControl.OnApplyTemplate">
+            <summary>
+            When overridden in a derived class, is invoked whenever application code or internal processes call ApplyTemplate.
+            </summary>        
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ImageRendererControl.Stretch">
+            <summary>
+            Gets / sets how the image is resized to fill the allocated control space.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ImageRendererControl.Model">
+            <summary>
+            Gets / sets the image model associated to this control.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.ImageView">
+            <summary>
+            INTERNAL USE ONLY. Defines the report view for an <see cref="T:Infragistics.Reports.Instance.Image"/> item.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ImageView.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.Primitives.ImageView"/> class.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.ImageView.StretchProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.Primitives.ImageView.Stretch"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.ImageView.ModelProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.Primitives.ImageView.Model"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.ImageView.ClipRectangleProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.Primitives.ImageView.ClipRectangle"/> dependency property
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ImageView.Stretch">
+            <summary>
+            Gets / sets how the image is resized to fill its allocated space.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ImageView.Model">
+            <summary>
+            Gets / sets the model associated with this view.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ImageView.ClipRectangle">
+            <summary>
+            Gets / sets a <see cref="T:System.Windows.Rect"/> to perform clipping to this control.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.LabelControl">
+            <summary>
+            INTERNAL USE ONLY. Defines the report view for an <see cref="T:Infragistics.Reports.Instance.Label"/> item.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.LabelControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.Primitives.LabelControl"/> class.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.LabelControl.Text">
+            <summary>
+            Gets / sets the text for this control.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.LabelControl.HorizontalTextAlignment">
+            <summary>
+            Gets / sets how the text is horizontally aligned.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.LabelControl.VerticalTextAlignment">
+            <summary>
+            Gets / sets how the text is vertically aligned.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.LabelControl.TextDecorations">
+            <summary>
+            Gets / sets the decorations that will be applied to the control text.
+            </summary>        
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.LabelControl.ClipRectangle">
+            <summary>
+            Gets / sets a <see cref="T:System.Windows.Rect"/> to perform clipping to this control.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Localized">
+            <summary>
+            Lets to access localizable text resources from XAML.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Localized.Resource">
+            <summary>
+            Gets the instance where localizable text resources are located.
+            </summary>        
+        </member>
+        <member name="T:Infragistics.Controls.Reports.LogSR">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.LogSR.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.LogSR.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.LogSR.ClientExporter_Error">
+            <summary>
+              Looks up a localized string similar to ClientExporter -&gt; Error..
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.LogSR.ClientExporter_Progress">
+            <summary>
+              Looks up a localized string similar to ClientExporter -&gt; Progress: Processed {0}, Total {1}, Saving? {2}.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.LogSR.ClientExporter_StateChange">
+            <summary>
+              Looks up a localized string similar to ClientExporter -&gt; State = {0}..
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.LogSR.ClientExporter_Warning">
+            <summary>
+              Looks up a localized string similar to Export Warning..
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.LogSR.ReportViewerToolbar_UnableToCloseStream">
+            <summary>
+              Looks up a localized string similar to Unable to close stream!.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.LogSR.ReportViewerToolbar_UnableToDeleteFile">
+            <summary>
+              Looks up a localized string similar to Unable to delete file!.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.MarginSettings">
+            <summary>
+            Margin settings for rerendering the report.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.MarginSettings.LeftMargin">
+            <summary>
+            Gets / sets the left margin.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.MarginSettings.TopMargin">
+            <summary>
+            Gets / sets the top margin.
+            </summary>        
+        </member>
+        <member name="P:Infragistics.Controls.Reports.MarginSettings.RightMargin">
+            <summary>
+            Gets / sets the right margin.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.MarginSettings.BottomMargin">
+            <summary>
+            Gets / sets the bottom margin.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.MarginSettings.Mirrored">
+            <summary>
+            Gets / sets if margins are going to be mirrored.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.MeasureConverter">
+            <summary>
+            Measure converter.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.MeasureConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.MeasureConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>        
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.OverflowDialog">
+            <summary>
+            Represents an overflow dialog control.
+            <remarks>
+            In order to define transitions to open or close this control simple Storyboards can be defined in the resources of
+            "Root" part (names OverflowDialog.CloseStoryboardName and OverflowDialog.OpenStoryboardName); can't trust the VSM because
+            it doesn't always raise its events and this control MUST be sure to know when it's fully opened / closed
+            </remarks>
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.OverflowDialog.ExternalChromeMarginProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.Primitives.OverflowDialog.ExternalChromeMargin"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.OverflowDialog.IsOpenProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.Primitives.OverflowDialog.IsOpen"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.OverflowDialog.UseTransitionsProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.Primitives.OverflowDialog.UseTransitions"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.OverflowDialog.CloseOnFocusLostProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.Primitives.OverflowDialog.CloseOnFocusLost"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.OverflowDialog.CloseOnMouseLeftButtonDownProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.Primitives.OverflowDialog.CloseOnMouseLeftButtonDown"/> dependency property.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.OverflowDialog.AutoSetFocusProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.Primitives.OverflowDialog.AutoSetFocus"/> dependency property. Can be true if and only if !IsModal.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.OverflowDialog.__OpenDialogs">
+            <summary>
+            Ordered list of open dialogs.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.OverflowDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.Primitives.OverflowDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.OverflowDialog.CloseAllOpenedDialogs">
+            <summary>
+            Closes all opened dialogs.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.OverflowDialog.GetModalOnTop(Infragistics.Controls.Reports.Primitives.OverflowDialog,Infragistics.Controls.Reports.Primitives.OverflowDialog)">
+            <summary>
+            Given two dialogs, returns which one is on top.
+            </summary>
+            <param name="first">First dialog to check.</param>
+            <param name="second">Second dialog to check.</param>
+            <returns>The dialog on top.</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.OverflowDialog.GetModalDialogFor(System.Windows.FrameworkElement)">
+            <summary>
+            Given a <see cref="T:System.Windows.FrameworkElement"/> returns to which dialog it belongs.
+            </summary>
+            <param name="element"><see cref="T:System.Windows.FrameworkElement"/> to check.</param>
+            <returns>The dialog which the element belongs, null otherwise.</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.OverflowDialog.IsInsideDialog(System.Windows.FrameworkElement)">
+            <summary>
+            Given a <see cref="T:System.Windows.FrameworkElement"/> checks if it belongs to this dialog.
+            </summary>
+            <param name="element"><see cref="T:System.Windows.FrameworkElement"/> to check.</param>
+            <returns>True if the given element belongs to this dialog, false otherwise.</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.OverflowDialog.FocusPopup">
+            <summary>
+            Sets focus on the popup.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.OverflowDialog.OnApplyTemplate">
+            <summary>
+            When overridden in a derived class, is invoked whenever application code or internal processes call ApplyTemplate.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.OverflowDialog.SetRelativePositionedElement(System.Windows.FrameworkElement)">
+            <summary>
+            Defines the element that will be used to relative position the dialog content.
+            VerticalAlignment, HorizontalAlignment and Margin properties of the dialog will be taken into account.
+            </summary>
+            <param name="element">Element that will be used for positioning, if null the content will be centered.</param>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.OverflowDialog.GotoClosedState(System.Boolean)">
+            <summary>
+            Closes the dialog.
+            </summary>
+            <param name="firstTime">
+            true indicates that the control is going to its initial state (probably it was declared with IsOpen="False" or without the property at all).
+            </param>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.Primitives.OverflowDialog.PopupOpening">
+            <summary>
+            Occurs when the popup is opening state.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.Primitives.OverflowDialog.PopupClosing">
+            <summary>
+            Occurs when the popup is in closing state.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.Primitives.OverflowDialog.ZOrderChanged">
+            <summary>
+            Occurs when ZOrder of the current dialog instance changed.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.Primitives.OverflowDialog.Opened">
+            <summary>
+            Occurs when the dialog is completely opened.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.Primitives.OverflowDialog.Closed">
+            <summary>
+            Occurs when the dialog is completely closed.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.Primitives.OverflowDialog.Opening">
+            <summary>
+            Occurs when the dialog is being opened.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.Primitives.OverflowDialog.Closing">
+            <summary>
+            Occurs when the dialog is being closed.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.Primitives.OverflowDialog.Escape">
+            <summary>
+            Ocurrs when the Escape key is pressed while the dialog is opened.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.Primitives.OverflowDialog.DialogSizeChanged">
+            <summary>
+            Ocurrs when the dialog size has changed.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.OverflowDialog.PlacementTarget">
+            <summary>
+            Sets the <see cref="T:System.Windows.FrameworkElement"/> that will be used to place the dialog content.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.OverflowDialog.InnerElement">
+            <summary>
+            Gets the dialog content defined by the user.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.OverflowDialog.ExternalChromeMargin">
+            <summary>
+            Gets / sets the margin space between the relative positioning control.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.OverflowDialog.UseTransitions">
+            <summary>
+            Gets / sets a value indicating if the control use animations when is being opened / closed.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.OverflowDialog.IsOpen">
+            <summary>
+            Gets or sets a value indicating whether the dialog is open.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.OverflowDialog.CloseOnFocusLost">
+            <summary>
+            Gets / sets if the dialog closes when focus is lost.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.OverflowDialog.CloseOnMouseLeftButtonDown">
+            <summary>
+            Gets / sets if the dialog closes when the left mouse button is clicked.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.OverflowDialog.AutoSetFocus">
+            <summary>
+            Gets / sets if focus returns to the previously focused element when the dialog opens again.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.ClosingEventArgs">
+            <summary>
+            Closing Event Args.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ClosingEventArgs.#ctor(System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.Primitives.ClosingEventArgs"/> class.
+            </summary>
+            <param name="closeCausedByFocusLost">if set to <c>true</c> [close caused by focus lost].</param>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ClosingEventArgs.CloseCausedByFocusLost">
+            <summary>
+            Gets or sets a value indicating whether [close caused by focus lost].
+            </summary>
+            <value>
+            <c>true</c> if [close caused by focus lost]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.PageOrientation">
+            <summary>
+            Specifies the paper orientation.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.PageOrientation.Portrait">
+            <summary>
+            Orientation will be portrait.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.PageOrientation.Landscape">
+            <summary>
+            Orientation will be landscape.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.PaperSize">
+            <summary>
+            Defines the paper size that will be used for printing.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Infragistics.Controls.Reports.PaperSize.#ctor(Infragistics.Reports.Measure,Infragistics.Reports.Measure)" -->
+        <member name="P:Infragistics.Controls.Reports.PaperSize.Name">
+            <summary>
+            Gets the name of the paper to be used for printing.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.PaperSize.Height">
+            <summary>
+            Gets the paper height.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.PaperSize.Width">
+            <summary>
+            Gets the paper width.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Parameter">
+            <summary>
+            Represents a bindable report parameter.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Parameter.ParameterNameProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.Parameter.ParameterName"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Parameter.ParameterValueProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.Parameter.ParameterValue"/> dependency property
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.Parameter.ParameterReady">
+            <summary>
+            Occurs when data ready associated to the settings is ready.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Parameter.ParameterName">
+            <summary>
+            Gets or sets the parameter name.
+            </summary>
+            <value>
+            The name of the parameter to bind.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Parameter.ParameterValue">
+            <summary>
+            Gets or sets the parameter value.
+            </summary>
+            <value>
+            Value of the parameter to bind.
+            </value>        
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.ReportParameterComboBoxControl">
+            <summary>
+            Combobox control for use in the parameter value selection prompt.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ReportParameterComboBoxControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.Primitives.ReportParameterComboBoxControl"/> class.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.ReportParametersPaneControl">
+            <summary>
+            Represents the report viewer parameters form control.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.ReportParametersPaneControl.PanelVisibilityProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.Primitives.ReportParametersPaneControl.PanelVisibility"/> dependency property
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ReportParametersPaneControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.Primitives.ReportParametersPaneControl"/> class.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParametersPaneControl.PanelVisibility">
+            <summary>
+            Gets / sets the panel visibility.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.Placement">
+            <summary>
+            Defines the position for the <see cref="T:Infragistics.Controls.Reports.Primitives.OverflowDialog"/> relative to a given <see cref="T:System.Windows.FrameworkElement"/>
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.ConfirmationDialog">
+            <summary>
+            Dialog for printing confirmation in Silverlight.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ConfirmationDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.Primitives.ConfirmationDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ConfirmationDialog.OnApplyTemplate">
+            <summary>
+            When overridden in a derived class, is invoked whenever application code or internal processes call <see cref="!:System.Windows.FrameworkElement.ApplyTemplate"/>.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.Primitives.ConfirmationDialog.OkClicked">
+            <summary>
+            Event raised when the OK button is clicked.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.Primitives.ConfirmationDialog.CancelClicked">
+            <summary>
+            Event raised when the Cancel button is clicked.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ConfirmationDialog.Message">
+            <summary>
+            Gets / sets the confirmation dialog message.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.PageSettings">
+            <summary>
+            Page settings for rerendering the report.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.PageSettings.#ctor(Infragistics.Controls.Reports.PaperSize,Infragistics.Controls.Reports.PageOrientation,Infragistics.Controls.Reports.MarginSettings)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.PageSettings"/> class.
+            </summary>
+            <param name="paperSize"><see cref="T:Infragistics.Controls.Reports.PaperSize"/> that will be used for printing the report.</param>
+            <param name="pageOrientation"><see cref="T:Infragistics.Controls.Reports.PageOrientation"/> that will be used for defining the page orientation.</param>
+            <param name="marginSettings"><see cref="T:Infragistics.Controls.Reports.MarginSettings"/> that will be used for defining report margins.</param>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.PageSettings.PageOrientation">
+            <summary>
+            Gets / sets the page orientation.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.PageSettings.PaperSize">
+            <summary>
+            Gets / sets the paper size.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.PageSettings.MarginSettings">
+            <summary>
+            Gets / sets the margin settings.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.PageSettingsDialog">
+            <summary>
+            Dialog for configuring report page settings.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.PageSettingsDialog.OnApplyTemplate">
+            <summary>
+            When overridden in a derived class, is invoked whenever application code or internal processes call <see cref="M:System.Windows.FrameworkElement.ApplyTemplate"/>.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.PageSettingsDialog.ViewModel">
+            <summary>
+            Gets or sets the view model.
+            </summary>
+            <value>
+            The view model.
+            </value>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.PageSettingsViewModel">
+            <summary>
+            View model for the <see cref="T:Infragistics.Controls.Reports.Primitives.PageSettingsDialog"/> class.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.PaperSizeViewModel">
+            <summary>
+            Paper Size Helper.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.PaperSizeViewModel.Name">
+            <summary>
+            Gets or sets the paper name.
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.PaperSizeViewModel.Size">
+            <summary>
+            Gets or sets the paper size.
+            </summary>
+            <value>
+            The size.
+            </value>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.SettingsBase">
+            <summary>
+            Base class for Settings objects.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.ViewerRenderSettings">
+            <summary>
+            Base class for RenderSettings objects.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.ViewerRenderSettings.IsRequiredConfigurationSet">
+            <summary>
+            Determines whether the required configuration has been set.
+            </summary>
+            <returns>
+              <c>true</c> if the required configuration has been set; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.ViewerRenderSettings.IsRequiredDataSource">
+            <summary>
+            Determines whether the required data been set.
+            </summary>
+            <returns>
+              <c>true</c> if the required data has been set; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.ViewerRenderSettings.DataReady">
+            <summary>
+            Occurs when data ready associated to the settings is ready.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.ClientRenderSettings">
+            <summary>
+            Settings for rendering a report in standalone mode (without a report server).
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.ClientRenderSettings.DefinitionUriProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.ClientRenderSettings.DefinitionUri"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.ClientRenderSettings.DefinitionStreamProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.ClientRenderSettings.DefinitionStream"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.ClientRenderSettings.DataSourcesProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.ClientRenderSettings.DataSources"/> dependency property
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.ClientRenderSettings.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.ClientRenderSettings"/> class.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ClientRenderSettings.DefinitionUri">
+            <summary>
+            Gets or sets the the report location.
+            </summary>
+            <value>
+            <see cref="T:System.Uri"/> which represents the report location.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ClientRenderSettings.DefinitionStream">
+            <summary>
+            Gets or sets the report.
+            </summary>
+            <value>
+            <see cref="T:System.IO.Stream"/> which contains a report.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ClientRenderSettings.DataSources">
+            <summary>
+            Gets or sets the data sources collection to be provided to the report, if any.
+            </summary>
+            <value>
+            The data sources.
+            </value>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.ServerRenderSettings">
+            <summary>
+            Settings for rendering a report in server mode.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.ServerRenderSettings.DefinitionUriProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.ServerRenderSettings.DefinitionUri"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.ServerRenderSettings.ServiceEndpointUriProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.ServerRenderSettings.ServiceEndpointUri"/> dependency property
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ServerRenderSettings.DefinitionUri">
+            <summary>
+            Gets or sets the the report location.
+            </summary>
+            <value>
+            <see cref="T:System.Uri"/> which represents the report location.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ServerRenderSettings.ServiceEndpointUri">
+            <summary>
+            Gets or sets the the report server location.
+            </summary>
+            <value>
+            <see cref="T:System.Uri"/> which represents the report server location.
+            </value>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.DataSource">
+            <summary>
+            Class that provides the Data Source information for Client Rendering Settings.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.DataSource.TargetDataSourceProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.DataSource.TargetDataSource"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.DataSource.ItemsSourceProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.DataSource.ItemsSource"/> dependency property
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.DataSource.TargetDataSource">
+            <summary>
+            Name of the report data source.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.DataSource.ItemsSource">
+            <summary>
+            Object that holds the data source data. Must be an IEnumerable in order to work properly.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.DataSourceCollection">
+            <summary>
+            Represents a DataSource collection.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.ToolBarSettings">
+            <summary>
+            Settings class for the <see cref="T:Infragistics.Controls.Reports.Primitives.ReportViewerToolBar"/> control.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.ToolBarSettings.ToolBarVisibilityProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.ToolBarSettings.ToolBarVisibility"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.ToolBarSettings.PagerVisibilityProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.ToolBarSettings.PagerVisibility"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.ToolBarSettings.RefreshVisibilityProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.ToolBarSettings.RefreshVisibility"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.ToolBarSettings.ExportVisibilityProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.ToolBarSettings.ExportVisibility"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.ToolBarSettings.JumpToPageVisibilityProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.ToolBarSettings.JumpToPageVisibility"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.ToolBarSettings.ZoomScaleVisibilityProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.ToolBarSettings.ZoomScaleVisibility"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.ToolBarSettings.FitToPageVisibilityProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.ToolBarSettings.FitToPageVisibility"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.ToolBarSettings.FitToWidthVisibilityProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.ToolBarSettings.FitToWidthVisibility"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.ToolBarSettings.PrintVisibilityProperty">
+            <summary>
+            Identifies the <see cref="!:Print"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.ToolBarSettings.PageSettingsVisibilityProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.ToolBarSettings.PageSettingsVisibility"/> dependency property
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ToolBarSettings.ToolBarVisibility">
+            <summary>
+            Gets or sets the visibility of the toolbar.
+            </summary>
+            <seealso cref="T:System.Windows.Visibility"/>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ToolBarSettings.PagerVisibility">
+            <summary>
+            Gets or sets the visibility of the pager controls (first, previous, next, last buttons).
+            </summary>
+            <seealso cref="T:System.Windows.Visibility"/>        
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ToolBarSettings.RefreshVisibility">
+            <summary>
+            Gets or sets the visibility of the Refresh button.
+            </summary>
+            <seealso cref="T:System.Windows.Visibility"/>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ToolBarSettings.ExportVisibility">
+            <summary>
+            Gets or sets the visibility of the Export controls (export button, format combobox).
+            </summary>
+            <seealso cref="T:System.Windows.Visibility"/>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ToolBarSettings.JumpToPageVisibility">
+            <summary>
+            Gets or sets the visibility of the Jump To Page textbox.
+            </summary>
+            <seealso cref="T:System.Windows.Visibility"/>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ToolBarSettings.ZoomScaleVisibility">
+            <summary>
+            Gets or sets the visibility of the Zoom controls (slider, zoom in/out buttons).
+            </summary>
+            <seealso cref="T:System.Windows.Visibility"/>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ToolBarSettings.FitToPageVisibility">
+            <summary>
+            Gets or sets the visibility of the Fit To Page button.
+            </summary>
+            <seealso cref="T:System.Windows.Visibility"/>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ToolBarSettings.FitToWidthVisibility">
+            <summary>
+            Gets or sets the visibility of the Fit to Width button.
+            </summary>
+            <seealso cref="T:System.Windows.Visibility"/>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ToolBarSettings.PrintVisibility">
+            <summary>
+            Gets or sets the visibility of the Print button.
+            </summary>
+            <seealso cref="T:System.Windows.Visibility"/>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ToolBarSettings.PageSettingsVisibility">
+            <summary>
+            Gets or sets the visibility of the Page Settings button.
+            </summary>
+            <seealso cref="T:System.Windows.Visibility"/>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.DataTemplateSelector">
+            <summary>
+            Helper class that selects the appropriate parameter template.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.DataTemplateSelector.SelectTemplate(System.Object,System.Windows.DependencyObject)">
+            <summary>
+            Selects the template.
+            </summary>
+            <param name="item">The item.</param>
+            <param name="container">The container.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.IReportParameterControlViewModel">
+            <summary>
+            View model interface for parameter controls.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.IReportParameterControlViewModel.ValidateData(System.String)">
+            <summary>
+            Validates the data.
+            </summary>
+            <param name="inputValue">The input value.</param>
+            <returns><c>true</c> if the data is valid, <c>false</c> otherwise.></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.IReportParameterControlViewModel.ValidateData">
+            <summary>
+            Validates the data.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.IReportParameterControlViewModel.DisplayName">
+            <summary>
+            Gets the display name.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.IReportParameterControlViewModel.ParameterSelectedValue">
+            <summary>
+            Gets or sets the parameter selected value.
+            </summary>
+            <value>
+            The parameter selected value.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.IReportParameterControlViewModel.IsEnabled">
+            <summary>
+            Gets or sets a value indicating whether this instance is enabled.
+            </summary>
+            <value>
+              <c>true</c> if this instance is enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.IReportParameterControlViewModel.NullChecked">
+            <summary>
+            Gets or sets a value indicating whether the null value is checked.
+            </summary>
+            <value>
+              <c>true</c> if the null value is checked; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.IReportParameterControlViewModel.Visible">
+            <summary>
+            Gets the visibility of the control.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.IReportParameterControlViewModel.NullVisible">
+            <summary>
+            Gets the null value visibility.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.IReportParameterControlViewModel.Model">
+            <summary>
+            Gets the parameter model.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.IReportParameterControlViewModel.ParentViewModel">
+            <summary>
+            Gets the parent view model.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.IReportParameterControlViewModel.AvailableValues">
+            <summary>
+            Gets the available values.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.ParameterDataTemplateSelector">
+            <summary>
+            DataTemplateSelector implementation for parameters templates.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ParameterDataTemplateSelector.ReportParameterTextBoxTemplate">
+            <summary>
+            Gets or sets the report parameter text box template.
+            </summary>
+            <value>
+            The report parameter text box template.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ParameterDataTemplateSelector.ReportParameterCheckBoxTemplate">
+            <summary>
+            Gets or sets the report parameter check box template.
+            </summary>
+            <value>
+            The report parameter check box template.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ParameterDataTemplateSelector.ReportParameterComboBoxTemplate">
+            <summary>
+            Gets or sets the report parameter combo box template.
+            </summary>
+            <value>
+            The report parameter combo box template.
+            </value>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.ReportParameterCheckBoxViewModel">
+            <summary>
+            View model for a parameter of boolean type.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ReportParameterCheckBoxViewModel.#ctor(Infragistics.Reports.Engine.Parameter,Infragistics.Controls.Reports.Primitives.ReportParametersViewModel)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.Primitives.ReportParameterCheckBoxViewModel"/> class.
+            </summary>
+            <param name="parameter">The parameter model.</param>
+            <param name="parentViewModel">The parent view model.</param>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ReportParameterCheckBoxViewModel.ValidateData(System.String)">
+            <summary>
+            Validates the data.
+            </summary>
+            <param name="inputValue">The input value.</param>
+            <returns><c>true</c> if the data is valid, <c>false</c> otherwise.></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ReportParameterCheckBoxViewModel.ValidateData">
+            <summary>
+            Validates the data.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterCheckBoxViewModel.DisplayName">
+            <summary>
+            Gets the display name.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterCheckBoxViewModel.ParameterSelectedValue">
+            <summary>
+            Gets or sets the parameter selected value.
+            </summary>
+            <value>
+            The parameter selected value.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterCheckBoxViewModel.IsEnabled">
+            <summary>
+            Gets or sets a value indicating whether this instance is enabled.
+            </summary>
+            <value>
+              <c>true</c> if this instance is enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterCheckBoxViewModel.NullChecked">
+            <summary>
+            Gets or sets a value indicating whether the null value is checked.
+            </summary>
+            <value>
+              <c>true</c> if the null value is checked; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterCheckBoxViewModel.Visible">
+            <summary>
+            Gets the visibility of the control.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterCheckBoxViewModel.NullVisible">
+            <summary>
+            Gets the null value visibility.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterCheckBoxViewModel.Model">
+            <summary>
+            Gets the parameter model.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterCheckBoxViewModel.ParentViewModel">
+            <summary>
+            Gets the parent view model.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterCheckBoxViewModel.AvailableValues">
+            <summary>
+            Gets the available values.
+            </summary>        
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterCheckBoxViewModel.Item(System.String)">
+            <summary>
+            Gets the error message for the property with the given name.
+            </summary>
+            <param name="columnName">The name of the property whose error message to get.</param>
+            <returns>The error message for the property. The default is an empty string ("").</returns>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterCheckBoxViewModel.Error">
+            <summary>
+            Gets an error message indicating what is wrong with this object.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.ReportParameterComboBoxViewModel">
+            <summary>
+            View model for the <see cref="T:Infragistics.Controls.Reports.Primitives.ReportParameterComboBoxControl"/> class.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ReportParameterComboBoxViewModel.#ctor(Infragistics.Reports.Engine.Parameter,Infragistics.Controls.Reports.Primitives.ReportParametersViewModel)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.Primitives.ReportParameterComboBoxViewModel"/> class.
+            </summary>
+            <param name="parameter">The parameter.</param>
+            <param name="parentViewModel">The parent view model.</param>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ReportParameterComboBoxViewModel.ValidateData(System.String)">
+            <summary>
+            Validates the data.
+            </summary>
+            <param name="inputValue">The input value.</param>
+            <returns><c>true</c> if the data is valid, <c>false</c> otherwise.></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ReportParameterComboBoxViewModel.ValidateData">
+            <summary>
+            Validates the data.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterComboBoxViewModel.DisplayName">
+            <summary>
+            Gets the display name.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterComboBoxViewModel.ParameterSelectedValue">
+            <summary>
+            Gets or sets the parameter selected value.
+            </summary>
+            <value>
+            The parameter selected value.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterComboBoxViewModel.IsEnabled">
+            <summary>
+            Gets or sets a value indicating whether this control is enabled.
+            </summary>
+            <value>
+              <c>true</c> if this instance is enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterComboBoxViewModel.NullChecked">
+            <summary>
+            Gets or sets a value indicating whether the null value is checked.
+            </summary>
+            <value>
+              <c>true</c> if the null value is checked; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterComboBoxViewModel.Visible">
+            <summary>
+            Gets the visibility of the control.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterComboBoxViewModel.NullVisible">
+            <summary>
+            Gets the null value visibility.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterComboBoxViewModel.Model">
+            <summary>
+            Gets the parameter model.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterComboBoxViewModel.ParentViewModel">
+            <summary>
+            Gets the parent view model.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterComboBoxViewModel.AvailableValues">
+            <summary>
+            Gets the available values.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.ReportParametersViewModel">
+            <summary>
+            View model class for the report parameters.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ReportParametersViewModel.Submit(System.Object)">
+            <summary>
+            Submits the specified parameter.
+            </summary>
+            <param name="parameter">The parameter.</param>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.Primitives.ReportParametersViewModel.ParametersProcessingFinished">
+            <summary>
+            Event handler that is called when the processing of parameters is finished.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.Primitives.ReportParametersViewModel.ParametersNeedToReload">
+            <summary>
+            Occurs when parameters need to reload their backend data.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.Primitives.ReportParametersViewModel.SubmitClicked">
+            <summary>
+            Occurs when the submit button is clicked.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParametersViewModel.ParameterControlViewModels">
+            <summary>
+            Gets the parameter control view models.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParametersViewModel.Parameters">
+            <summary>
+            Gets or sets the model parameters.
+            </summary>
+            <value>
+            The parameters.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParametersViewModel.SubmitCommand">
+            <summary>
+            Gets the submit command.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParametersViewModel.SelectedParameterValues">
+            <summary>
+            Gets the selected parameter values.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParametersViewModel.ProcessingMode">
+            <summary>
+            Gets or sets the processing mode.
+            </summary>
+            <value>
+            The processing mode.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParametersViewModel.ReportSource">
+            <summary>
+            Gets or sets the report source.
+            </summary>
+            <value>
+            The report source.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParametersViewModel.ServerUri">
+            <summary>
+            Gets or sets the server URI.
+            </summary>
+            <value>
+            The server URI.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParametersViewModel.Source">
+            <summary>
+            Gets or sets the source.
+            </summary>
+            <value>
+            The source.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParametersViewModel.BindedParameterValues">
+            <summary>
+            Gets / Sets the initially binded parameter values.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.ParametersEventArgs">
+            <summary>
+            Event arguments for the ParametersProcessingFinished event.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ParametersEventArgs.#ctor(System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.Primitives.ParametersEventArgs"/> class.
+            </summary>
+            <param name="reportContainsParameters">if set to <c>true</c> [report contains parameters].</param>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ParametersEventArgs.ReportContainsParameters">
+            <summary>
+            Gets a value indicating whether the report contains parameters.
+            </summary>
+            <value>
+              <c>true</c> if the report contains parameters; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.ParameterValidationError">
+            <summary>
+            Class that encapsulates the information of a parameter validation error.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ParameterValidationError.ParameterName">
+            <summary>
+            Gets the name of the parameter.
+            </summary>
+            <value>
+            The name of the parameter.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ParameterValidationError.ParameterDisplayName">
+            <summary>
+            Gets the display name of the parameter.
+            </summary>
+            <value>
+            The display name of the parameter.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ParameterValidationError.ValidationError">
+            <summary>
+            Gets the validation error.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.ParametersValidationEventArgs">
+            <summary>
+            Event arguments for the SubmitClicked event.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ParametersValidationEventArgs.ValidationErrors">
+            <summary>
+            Gets the validation errors.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.ParameterComparer">
+            <summary>
+            Comparer for sorting parameters depending if the DisplayName property is set.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.ReportParameterTextBoxViewModel">
+            <summary>
+            View model for a parameter that allows free user input.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ReportParameterTextBoxViewModel.#ctor(Infragistics.Reports.Engine.Parameter,Infragistics.Controls.Reports.Primitives.ReportParametersViewModel)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.Primitives.ReportParameterTextBoxViewModel"/> class.
+            </summary>
+            <param name="parameter">The parameter.</param>
+            <param name="parentViewModel">The parent view model.</param>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ReportParameterTextBoxViewModel.ValidateData(System.String)">
+            <summary>
+            Validates the data.
+            </summary>
+            <param name="inputValue">The input value.</param>
+            <returns><c>true</c> if the data is valid, <c>false</c> otherwise.></returns>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ReportParameterTextBoxViewModel.ValidateData">
+            <summary>
+            Validates the data.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterTextBoxViewModel.DisplayName">
+            <summary>
+            Gets the display name.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterTextBoxViewModel.ParameterSelectedValue">
+            <summary>
+            Gets or sets the parameter selected value.
+            </summary>
+            <value>
+            The parameter selected value.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterTextBoxViewModel.IsEnabled">
+            <summary>
+            Gets or sets a value indicating whether this instance is enabled.
+            </summary>
+            <value>
+              <c>true</c> if this instance is enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterTextBoxViewModel.NullChecked">
+            <summary>
+            Gets or sets a value indicating whether the null value is checked.
+            </summary>
+            <value>
+              <c>true</c> if the null value is checked; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterTextBoxViewModel.Visible">
+            <summary>
+            Gets the visibility of the control.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterTextBoxViewModel.NullVisible">
+            <summary>
+            Gets the null value visibility.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterTextBoxViewModel.Model">
+            <summary>
+            Gets the parameter model.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterTextBoxViewModel.ParentViewModel">
+            <summary>
+            Gets the parent view model.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterTextBoxViewModel.AvailableValues">
+            <summary>
+            Gets the available values.
+            </summary>        
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterTextBoxViewModel.Item(System.String)">
+            <summary>
+            Gets the error message for the property with the given name.
+            </summary>
+            <param name="columnName">The name of the property whose error message to get.</param>
+            <returns>The error message for the property. The default is an empty string ("").</returns>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportParameterTextBoxViewModel.Error">
+            <summary>
+            Gets an error message indicating what is wrong with this object.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.ReportViewerError">
+            <summary>
+            XAML control used to display error messages in the XamReportViewer.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.ReportViewerError.ErrorReportProperty">
+            <summary>
+            Error report dependency property.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ReportViewerError.OnApplyTemplate">
+            <summary>
+            When overridden in a derived class, is invoked whenever application code or internal processes call <see cref="!:System.Windows.FrameworkElement.ApplyTemplate"/>.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ReportViewerError.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.Primitives.ReportViewerError"/> class.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportViewerError.ErrorReport">
+            <summary>
+            Gets or sets the error report.
+            </summary>
+            <value>
+            The error state containing the reported errors.
+            </value>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.ReportServerException">
+            <summary>
+            Represents a Report Server Exception.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.ReportServerException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.ReportServerException"/> class.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.ReportServerException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.ReportServerException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.ReportServerException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.ReportServerException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.SR">
+            <summary>
+            A strongly-typed resource class, for looking up localized strings, formatting them, etc.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.SR.#ctor">
+            <summary>
+            Initializes a SR object.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.SR.ExternalDataSourceNullErrorMsg(System.Object)">
+            <summary>
+            Formats a localized string similar to 'The target data source {0} has been set to null.'.
+            </summary>
+            <param name="arg0">An object (0) to format.</param>
+            <returns>A copy of format string in which the format items have been replaced by the String equivalent of the corresponding instances of Object in arguments.</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.SR.ExternalDataSourceUnknownTypeErrorMsg(System.Object,System.Object)">
+            <summary>
+            Formats a localized string similar to 'Unknown data source type {0} for target data source {1}.'.
+            </summary>
+            <param name="arg0">An object (0) to format.</param>
+            <param name="arg1">An object (1) to format.</param>
+            <returns>A copy of format string in which the format items have been replaced by the String equivalent of the corresponding instances of Object in arguments.</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.SR.PageSettingsMarginValueValidation(System.Object)">
+            <summary>
+            Formats a localized string similar to 'Margin must be greater than zero and less than {0}.'.
+            </summary>
+            <param name="arg0">An object (0) to format.</param>
+            <returns>A copy of format string in which the format items have been replaced by the String equivalent of the corresponding instances of Object in arguments.</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.SR.PageSizeBoundariesGreaterThanErrorMsg(System.Object,System.Object)">
+            <summary>
+            Formats a localized string similar to '{0} cannot be greater than {1} inches.'.
+            </summary>
+            <param name="arg0">An object (0) to format.</param>
+            <param name="arg1">An object (1) to format.</param>
+            <returns>A copy of format string in which the format items have been replaced by the String equivalent of the corresponding instances of Object in arguments.</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.SR.PageSizeBoundariesLessThanErrorMsg(System.Object,System.Object)">
+            <summary>
+            Formats a localized string similar to '{0} cannot be less than {1} inches.'.
+            </summary>
+            <param name="arg0">An object (0) to format.</param>
+            <param name="arg1">An object (1) to format.</param>
+            <returns>A copy of format string in which the format items have been replaced by the String equivalent of the corresponding instances of Object in arguments.</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.SR.ParameterBindingsDependencyErrorMsg(System.Object)">
+            <summary>
+            Formats a localized string similar to 'Invalid cascade parameter binding. All parent elements in the path {0} must be bound.'.
+            </summary>
+            <param name="arg0">An object (0) to format.</param>
+            <returns>A copy of format string in which the format items have been replaced by the String equivalent of the corresponding instances of Object in arguments.</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.SR.PreparingToPrintMsg(System.Object)">
+            <summary>
+            Formats a localized string similar to 'Preparing to Print ({0}%)'.
+            </summary>
+            <param name="arg0">An object (0) to format.</param>
+            <returns>A copy of format string in which the format items have been replaced by the String equivalent of the corresponding instances of Object in arguments.</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.SR.PrinterRetrievalErrorMsg(System.Object)">
+            <summary>
+            Formats a localized string similar to 'An error occurred while trying to retrieve the printer {0}.'.
+            </summary>
+            <param name="arg0">An object (0) to format.</param>
+            <returns>A copy of format string in which the format items have been replaced by the String equivalent of the corresponding instances of Object in arguments.</returns>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.SR.ReportNotFoundException(System.Object)">
+            <summary>
+            Formats a localized string similar to 'Report {0} not found in referenced assembly.'.
+            </summary>
+            <param name="arg0">An object (0) to format.</param>
+            <returns>A copy of format string in which the format items have been replaced by the String equivalent of the corresponding instances of Object in arguments.</returns>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.InternalSyncObject">
+            <summary>
+            Thread safe lock object used by this class.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ResourceManager">
+            <summary>
+            Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.Culture">
+            <summary>
+            Overrides the current thread's CurrentUICulture property for all
+            resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.Cancel">
+            <summary>
+            Looks up a localized string similar to 'Cancel'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.CannotCloseStreamErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Export Error: Unable to close target stream.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.CannotFindReportErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Cannot find Report.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.Close">
+            <summary>
+            Looks up a localized string similar to 'Close'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ConfirmationTitle">
+            <summary>
+            Looks up a localized string similar to 'Confirmation'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ControlNotInVisualTreeErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'The Viewer needs to be part of the Visual Tree in order for export to work properly.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.CustomPaperSize">
+            <summary>
+            Looks up a localized string similar to 'Custom Paper Size'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.Excel2003">
+            <summary>
+            Looks up a localized string similar to 'Excel 2003'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.Excel2003FilesFilter">
+            <summary>
+            Looks up a localized string similar to 'Excel 2003 Files|*.xls'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.Excel2007">
+            <summary>
+            Looks up a localized string similar to 'Excel 2007'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.Excel2007FilesFilter">
+            <summary>
+            Looks up a localized string similar to 'Excel 2007 Files|*.xlsx'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.Export">
+            <summary>
+            Looks up a localized string similar to 'Export'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.Exporting">
+            <summary>
+            Looks up a localized string similar to 'Exporting...'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ExportNotAvailableErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Export functionality is not available.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ExternalDataSourceTargetNameNullErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'The TargetDataSource property must be set for all DataSources.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.FitToPageToolTip">
+            <summary>
+            Looks up a localized string similar to 'Fit to Page'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.FitToWidthToolTip">
+            <summary>
+            Looks up a localized string similar to 'Fit to Width'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.GetFragmentsErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'An error occurred while getting the export information. Fragments could be retrieved from the server, but a problem occurred while deserializing.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.GetPageErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'An error occurred while getting a page. The page could be retrieved from the server, but it could not be deserialized.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.GetPageRangeErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'An error occurred while getting a page range. Pages could be retrieved from the server, but a problem occurred while deserializing.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.Height">
+            <summary>
+            Looks up a localized string similar to 'Height'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.HideDetails">
+            <summary>
+            Looks up a localized string similar to 'Hide Details'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ImageNotFoundErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Image not found.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.InfragisticsFilesFilter">
+            <summary>
+            Looks up a localized string similar to 'Infragistics Report Files | *.igrpt'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.InvalidDpiSettingErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Invalid System Dpi setting.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.InvalidEndpointErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Report server address is invalid.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.InvalidPageRangeErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Invalid page range.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.InvalidPageSettingsErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Page settings are invalid. Please check page width and height are greater than zero and margins values are non negative.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.InvalidReportSourceErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Report Source is invalid. It must be in a valid FQN form.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.JumpToPage">
+            <summary>
+            Looks up a localized string similar to 'Jump to Page'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.LoadingReportMessage">
+            <summary>
+            Looks up a localized string similar to 'Loading Report ...'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.MarginsHeightErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Margins cannot be greater or equal than page height.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.MarginsWidthErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Margins cannot be greater or equal than page width.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.MissingCloseButtonErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Missing close button.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.MissingConfirmationCancelButton">
+            <summary>
+            Looks up a localized string similar to 'Missing Cancel button.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.MissingConfirmationMessageTextBlock">
+            <summary>
+            Looks up a localized string similar to 'Missing Message text block.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.MissingConfirmationOkButton">
+            <summary>
+            Looks up a localized string similar to 'Missing Ok button.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.MissingDetailsScrollViewerErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Missing details scroll viewer.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.MissingErrorDetailHolderErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Missing detail holder control.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.MissingErrorHolderErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Missing error holder control.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.MissingErrorsControlErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Missing report viewer error control.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.MissingImageControlErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Missing image control.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.MissingMainPanelErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Missing main panel.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.MissingPagePanelErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Missing page panel.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.MissingPageScrollBarErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Missing page scroll bar.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.MissingParametersCheckBoxControlErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Missing parameters input CheckBox control.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.MissingParametersComboBoxControlErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Missing parameters input ComboBox control.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.MissingParametersInputContainerErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Missing parameters input container.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.MissingParametersPaneErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Missing parameters pane.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.MissingParametersPaneSubmitButtonErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Missing parameters pane submit button.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.MissingParametersPaneToggleButtonErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Missing parameters pane toggle button.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.MissingParametersTextBoxControlErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Missing parameters input TextBox control.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.MissingShowDetailsErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Missing show details button.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.NoExportInProgressErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'There is no export to be canceled.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.Of">
+            <summary>
+            Looks up a localized string similar to 'of'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.Page">
+            <summary>
+            Looks up a localized string similar to 'Page'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.PageSettingsCancel">
+            <summary>
+            Looks up a localized string similar to 'Cancel'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.PageSettingsConfirmationTitle">
+            <summary>
+            Looks up a localized string similar to 'Print Report'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.PageSettingsLandscape">
+            <summary>
+            Looks up a localized string similar to 'Landscape'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.PageSettingsMarginBottom">
+            <summary>
+            Looks up a localized string similar to 'Bottom'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.PageSettingsMarginLeft">
+            <summary>
+            Looks up a localized string similar to 'Left'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.PageSettingsMarginRight">
+            <summary>
+            Looks up a localized string similar to 'Right'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.PageSettingsMargins">
+            <summary>
+            Looks up a localized string similar to 'Margins'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.PageSettingsMarginTop">
+            <summary>
+            Looks up a localized string similar to 'Top'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.PageSettingsMergePrintTicketErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'An error occurred while changing printer settings.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.PageSettingsOk">
+            <summary>
+            Looks up a localized string similar to 'OK'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.PageSettingsOrientation">
+            <summary>
+            Looks up a localized string similar to 'Orientation'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.PageSettingsPageSize">
+            <summary>
+            Looks up a localized string similar to 'Page Size'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.PageSettingsPortrait">
+            <summary>
+            Looks up a localized string similar to 'Portrait'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.PageSettingsPrinterPaperSizeConfirmationMsg">
+             <summary>
+             Looks up a localized string similar to 'Current printer paper size is different than the report&apos;s paper size. Do you want to scale the content to fit?
+            -.Click Yes to scale content to the printer paper size.
+            -.Click No to override printer page size.
+            -.Click Cancel to cancel printing.'.
+             </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.PageSettingsScalingConfirmationMsg">
+            <summary>
+            Looks up a localized string similar to 'Current printer paper size is smaller than the report&apos;s paper size. Page content will be scaled to fit. Would you like to continue? '.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.PageSettingsTitle">
+            <summary>
+            Looks up a localized string similar to 'Page Settings'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.PageSettingsToolTip">
+            <summary>
+            Looks up a localized string similar to 'Page Settings'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ParameterNameNotSetErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Parameter name has not been set.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ParameterNamesMustBeUniqueErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Parameter names must be unique.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ParametersErrorCaption">
+            <summary>
+            Looks up a localized string similar to 'Parameters error'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ParametersFormTitle">
+            <summary>
+            Looks up a localized string similar to 'Parameters'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ParametersValidationBlankValue">
+            <summary>
+            Looks up a localized string similar to 'Value cannot be blank'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ParametersValidationInvalidDateTime">
+            <summary>
+            Looks up a localized string similar to 'Value must be a valid date'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ParametersValidationInvalidFloat">
+            <summary>
+            Looks up a localized string similar to 'Value must be a valid float number'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ParametersValidationInvalidInt">
+            <summary>
+            Looks up a localized string similar to 'Value must be a valid int number'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ParametersValueMustBeSelected">
+            <summary>
+            Looks up a localized string similar to 'A value must be selected'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ParameterValueNotSetErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Parameter value has not been set.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.Pdf">
+            <summary>
+            Looks up a localized string similar to 'PDF'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.PdfFilesFilter">
+            <summary>
+            Looks up a localized string similar to 'PDF Files|*.pdf'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.PrintConfirmationMessage">
+            <summary>
+            Looks up a localized string similar to 'Document is ready to print. Would you like to continue?'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.PrintingReportMsg">
+            <summary>
+            Looks up a localized string similar to 'Printing Report ...'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.PrintInProgressErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Another printing job is in progress.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.PrintReportToolTip">
+            <summary>
+            Looks up a localized string similar to 'Print Report'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ProductName">
+            <summary>
+            Looks up a localized string similar to 'Infragistics Reporting'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.QuestionMark">
+            <summary>
+            Looks up a localized string similar to '?'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.Refresh">
+            <summary>
+            Looks up a localized string similar to 'Refresh'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ReportDefinitionLoadErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'A problem occurred while loading the Report Definition.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ReportExecutionCancelled">
+            <summary>
+            Looks up a localized string similar to 'Report execution was canceled by the user.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ReportHasNotFinishedLoadingErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'This operation requires a viewer with a report that has finished loading.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ReportProcessingNotStartedErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'This operation requires a report that has started loading.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ReportProcessingUnknownErrorErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'An unknown error occurred while processing the report.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ReportServerUrlErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Report Server Url cannot be empty.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ReportServiceUrlNotFoundErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Service Url not found.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ReportViewer">
+            <summary>
+            Looks up a localized string similar to 'Report Viewer'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ReportViewerFirstPageNumber">
+            <summary>
+            Looks up a localized string similar to '1'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.SeeMoreItemsToolTip">
+            <summary>
+            Looks up a localized string similar to 'See more items...'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ServerConnectionErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Cannot establish a connection with the report server.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.ShowDetails">
+            <summary>
+            Looks up a localized string similar to 'Show Details'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.SourceSettingNotFoundErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Source setting not found.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.Submit">
+            <summary>
+            Looks up a localized string similar to 'Submit'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.SysDpiNotFoundErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'System Dpi setting not found.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.TimeoutDownloadingImageErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'Timeout downloading Image.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.TrialVersionMessage">
+            <summary>
+            Looks up a localized string similar to 'This is a trial version of Infragistics Reporting.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.UnableToProcessResponseErrorMsg">
+            <summary>
+            Looks up a localized string similar to 'An unknown error occurred while processing the report server response.'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.Width">
+            <summary>
+            Looks up a localized string similar to 'Width'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.Xps">
+            <summary>
+            Looks up a localized string similar to 'XPS'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.XpsFilesFilter">
+            <summary>
+            Looks up a localized string similar to 'XPS Files|*.xps'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.Zero">
+            <summary>
+            Looks up a localized string similar to '0'.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.SR.Zoom">
+            <summary>
+            Looks up a localized string similar to 'Zoom'.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.SR.ResourceNames">
+            <summary>
+            Lists all the resource names as constant string fields.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.Cancel">
+            <summary>
+            Stores the resource name 'Cancel'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.CannotCloseStreamErrorMsg">
+            <summary>
+            Stores the resource name 'CannotCloseStreamErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.CannotFindReportErrorMsg">
+            <summary>
+            Stores the resource name 'CannotFindReportErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.Close">
+            <summary>
+            Stores the resource name 'Close'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ConfirmationTitle">
+            <summary>
+            Stores the resource name 'ConfirmationTitle'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ControlNotInVisualTreeErrorMsg">
+            <summary>
+            Stores the resource name 'ControlNotInVisualTreeErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.CustomPaperSize">
+            <summary>
+            Stores the resource name 'CustomPaperSize'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.Excel2003">
+            <summary>
+            Stores the resource name 'Excel2003'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.Excel2003FilesFilter">
+            <summary>
+            Stores the resource name 'Excel2003FilesFilter'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.Excel2007">
+            <summary>
+            Stores the resource name 'Excel2007'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.Excel2007FilesFilter">
+            <summary>
+            Stores the resource name 'Excel2007FilesFilter'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.Export">
+            <summary>
+            Stores the resource name 'Export'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.Exporting">
+            <summary>
+            Stores the resource name 'Exporting'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ExportNotAvailableErrorMsg">
+            <summary>
+            Stores the resource name 'ExportNotAvailableErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ExternalDataSourceNullErrorMsg">
+            <summary>
+            Stores the resource name 'ExternalDataSourceNullErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ExternalDataSourceTargetNameNullErrorMsg">
+            <summary>
+            Stores the resource name 'ExternalDataSourceTargetNameNullErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ExternalDataSourceUnknownTypeErrorMsg">
+            <summary>
+            Stores the resource name 'ExternalDataSourceUnknownTypeErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.FitToPageToolTip">
+            <summary>
+            Stores the resource name 'FitToPageToolTip'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.FitToWidthToolTip">
+            <summary>
+            Stores the resource name 'FitToWidthToolTip'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.GetFragmentsErrorMsg">
+            <summary>
+            Stores the resource name 'GetFragmentsErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.GetPageErrorMsg">
+            <summary>
+            Stores the resource name 'GetPageErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.GetPageRangeErrorMsg">
+            <summary>
+            Stores the resource name 'GetPageRangeErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.Height">
+            <summary>
+            Stores the resource name 'Height'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.HideDetails">
+            <summary>
+            Stores the resource name 'HideDetails'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ImageNotFoundErrorMsg">
+            <summary>
+            Stores the resource name 'ImageNotFoundErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.InfragisticsFilesFilter">
+            <summary>
+            Stores the resource name 'InfragisticsFilesFilter'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.InvalidDpiSettingErrorMsg">
+            <summary>
+            Stores the resource name 'InvalidDpiSettingErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.InvalidEndpointErrorMsg">
+            <summary>
+            Stores the resource name 'InvalidEndpointErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.InvalidPageRangeErrorMsg">
+            <summary>
+            Stores the resource name 'InvalidPageRangeErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.InvalidPageSettingsErrorMsg">
+            <summary>
+            Stores the resource name 'InvalidPageSettingsErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.InvalidReportSourceErrorMsg">
+            <summary>
+            Stores the resource name 'InvalidReportSourceErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.JumpToPage">
+            <summary>
+            Stores the resource name 'JumpToPage'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.LoadingReportMessage">
+            <summary>
+            Stores the resource name 'LoadingReportMessage'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.MarginsHeightErrorMsg">
+            <summary>
+            Stores the resource name 'MarginsHeightErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.MarginsWidthErrorMsg">
+            <summary>
+            Stores the resource name 'MarginsWidthErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.MissingCloseButtonErrorMsg">
+            <summary>
+            Stores the resource name 'MissingCloseButtonErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.MissingConfirmationCancelButton">
+            <summary>
+            Stores the resource name 'MissingConfirmationCancelButton'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.MissingConfirmationMessageTextBlock">
+            <summary>
+            Stores the resource name 'MissingConfirmationMessageTextBlock'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.MissingConfirmationOkButton">
+            <summary>
+            Stores the resource name 'MissingConfirmationOkButton'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.MissingDetailsScrollViewerErrorMsg">
+            <summary>
+            Stores the resource name 'MissingDetailsScrollViewerErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.MissingErrorDetailHolderErrorMsg">
+            <summary>
+            Stores the resource name 'MissingErrorDetailHolderErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.MissingErrorHolderErrorMsg">
+            <summary>
+            Stores the resource name 'MissingErrorHolderErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.MissingErrorsControlErrorMsg">
+            <summary>
+            Stores the resource name 'MissingErrorsControlErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.MissingImageControlErrorMsg">
+            <summary>
+            Stores the resource name 'MissingImageControlErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.MissingMainPanelErrorMsg">
+            <summary>
+            Stores the resource name 'MissingMainPanelErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.MissingPagePanelErrorMsg">
+            <summary>
+            Stores the resource name 'MissingPagePanelErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.MissingPageScrollBarErrorMsg">
+            <summary>
+            Stores the resource name 'MissingPageScrollBarErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.MissingParametersCheckBoxControlErrorMsg">
+            <summary>
+            Stores the resource name 'MissingParametersCheckBoxControlErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.MissingParametersComboBoxControlErrorMsg">
+            <summary>
+            Stores the resource name 'MissingParametersComboBoxControlErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.MissingParametersInputContainerErrorMsg">
+            <summary>
+            Stores the resource name 'MissingParametersInputContainerErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.MissingParametersPaneErrorMsg">
+            <summary>
+            Stores the resource name 'MissingParametersPaneErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.MissingParametersPaneSubmitButtonErrorMsg">
+            <summary>
+            Stores the resource name 'MissingParametersPaneSubmitButtonErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.MissingParametersPaneToggleButtonErrorMsg">
+            <summary>
+            Stores the resource name 'MissingParametersPaneToggleButtonErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.MissingParametersTextBoxControlErrorMsg">
+            <summary>
+            Stores the resource name 'MissingParametersTextBoxControlErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.MissingShowDetailsErrorMsg">
+            <summary>
+            Stores the resource name 'MissingShowDetailsErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.NoExportInProgressErrorMsg">
+            <summary>
+            Stores the resource name 'NoExportInProgressErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.Of">
+            <summary>
+            Stores the resource name 'Of'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.Page">
+            <summary>
+            Stores the resource name 'Page'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PageSettingsCancel">
+            <summary>
+            Stores the resource name 'PageSettingsCancel'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PageSettingsConfirmationTitle">
+            <summary>
+            Stores the resource name 'PageSettingsConfirmationTitle'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PageSettingsLandscape">
+            <summary>
+            Stores the resource name 'PageSettingsLandscape'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PageSettingsMarginBottom">
+            <summary>
+            Stores the resource name 'PageSettingsMarginBottom'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PageSettingsMarginLeft">
+            <summary>
+            Stores the resource name 'PageSettingsMarginLeft'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PageSettingsMarginRight">
+            <summary>
+            Stores the resource name 'PageSettingsMarginRight'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PageSettingsMargins">
+            <summary>
+            Stores the resource name 'PageSettingsMargins'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PageSettingsMarginTop">
+            <summary>
+            Stores the resource name 'PageSettingsMarginTop'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PageSettingsMarginValueValidation">
+            <summary>
+            Stores the resource name 'PageSettingsMarginValueValidation'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PageSettingsMergePrintTicketErrorMsg">
+            <summary>
+            Stores the resource name 'PageSettingsMergePrintTicketErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PageSettingsOk">
+            <summary>
+            Stores the resource name 'PageSettingsOk'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PageSettingsOrientation">
+            <summary>
+            Stores the resource name 'PageSettingsOrientation'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PageSettingsPageSize">
+            <summary>
+            Stores the resource name 'PageSettingsPageSize'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PageSettingsPortrait">
+            <summary>
+            Stores the resource name 'PageSettingsPortrait'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PageSettingsPrinterPaperSizeConfirmationMsg">
+            <summary>
+            Stores the resource name 'PageSettingsPrinterPaperSizeConfirmationMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PageSettingsScalingConfirmationMsg">
+            <summary>
+            Stores the resource name 'PageSettingsScalingConfirmationMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PageSettingsTitle">
+            <summary>
+            Stores the resource name 'PageSettingsTitle'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PageSettingsToolTip">
+            <summary>
+            Stores the resource name 'PageSettingsToolTip'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PageSizeBoundariesGreaterThanErrorMsg">
+            <summary>
+            Stores the resource name 'PageSizeBoundariesGreaterThanErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PageSizeBoundariesLessThanErrorMsg">
+            <summary>
+            Stores the resource name 'PageSizeBoundariesLessThanErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ParameterBindingsDependencyErrorMsg">
+            <summary>
+            Stores the resource name 'ParameterBindingsDependencyErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ParameterNameNotSetErrorMsg">
+            <summary>
+            Stores the resource name 'ParameterNameNotSetErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ParameterNamesMustBeUniqueErrorMsg">
+            <summary>
+            Stores the resource name 'ParameterNamesMustBeUniqueErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ParametersErrorCaption">
+            <summary>
+            Stores the resource name 'ParametersErrorCaption'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ParametersFormTitle">
+            <summary>
+            Stores the resource name 'ParametersFormTitle'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ParametersValidationBlankValue">
+            <summary>
+            Stores the resource name 'ParametersValidationBlankValue'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ParametersValidationInvalidDateTime">
+            <summary>
+            Stores the resource name 'ParametersValidationInvalidDateTime'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ParametersValidationInvalidFloat">
+            <summary>
+            Stores the resource name 'ParametersValidationInvalidFloat'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ParametersValidationInvalidInt">
+            <summary>
+            Stores the resource name 'ParametersValidationInvalidInt'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ParametersValueMustBeSelected">
+            <summary>
+            Stores the resource name 'ParametersValueMustBeSelected'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ParameterValueNotSetErrorMsg">
+            <summary>
+            Stores the resource name 'ParameterValueNotSetErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.Pdf">
+            <summary>
+            Stores the resource name 'Pdf'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PdfFilesFilter">
+            <summary>
+            Stores the resource name 'PdfFilesFilter'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PreparingToPrintMsg">
+            <summary>
+            Stores the resource name 'PreparingToPrintMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PrintConfirmationMessage">
+            <summary>
+            Stores the resource name 'PrintConfirmationMessage'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PrinterRetrievalErrorMsg">
+            <summary>
+            Stores the resource name 'PrinterRetrievalErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PrintingReportMsg">
+            <summary>
+            Stores the resource name 'PrintingReportMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PrintInProgressErrorMsg">
+            <summary>
+            Stores the resource name 'PrintInProgressErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.PrintReportToolTip">
+            <summary>
+            Stores the resource name 'PrintReportToolTip'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ProductName">
+            <summary>
+            Stores the resource name 'ProductName'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.QuestionMark">
+            <summary>
+            Stores the resource name 'QuestionMark'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.Refresh">
+            <summary>
+            Stores the resource name 'Refresh'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ReportDefinitionLoadErrorMsg">
+            <summary>
+            Stores the resource name 'ReportDefinitionLoadErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ReportExecutionCancelled">
+            <summary>
+            Stores the resource name 'ReportExecutionCancelled'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ReportHasNotFinishedLoadingErrorMsg">
+            <summary>
+            Stores the resource name 'ReportHasNotFinishedLoadingErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ReportNotFoundException">
+            <summary>
+            Stores the resource name 'ReportNotFoundException'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ReportProcessingNotStartedErrorMsg">
+            <summary>
+            Stores the resource name 'ReportProcessingNotStartedErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ReportProcessingUnknownErrorErrorMsg">
+            <summary>
+            Stores the resource name 'ReportProcessingUnknownErrorErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ReportServerUrlErrorMsg">
+            <summary>
+            Stores the resource name 'ReportServerUrlErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ReportServiceUrlNotFoundErrorMsg">
+            <summary>
+            Stores the resource name 'ReportServiceUrlNotFoundErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ReportViewer">
+            <summary>
+            Stores the resource name 'ReportViewer'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ReportViewerFirstPageNumber">
+            <summary>
+            Stores the resource name 'ReportViewerFirstPageNumber'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.SeeMoreItemsToolTip">
+            <summary>
+            Stores the resource name 'SeeMoreItemsToolTip'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ServerConnectionErrorMsg">
+            <summary>
+            Stores the resource name 'ServerConnectionErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.ShowDetails">
+            <summary>
+            Stores the resource name 'ShowDetails'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.SourceSettingNotFoundErrorMsg">
+            <summary>
+            Stores the resource name 'SourceSettingNotFoundErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.Submit">
+            <summary>
+            Stores the resource name 'Submit'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.SysDpiNotFoundErrorMsg">
+            <summary>
+            Stores the resource name 'SysDpiNotFoundErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.TimeoutDownloadingImageErrorMsg">
+            <summary>
+            Stores the resource name 'TimeoutDownloadingImageErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.TrialVersionMessage">
+            <summary>
+            Stores the resource name 'TrialVersionMessage'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.UnableToProcessResponseErrorMsg">
+            <summary>
+            Stores the resource name 'UnableToProcessResponseErrorMsg'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.Width">
+            <summary>
+            Stores the resource name 'Width'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.Xps">
+            <summary>
+            Stores the resource name 'Xps'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.XpsFilesFilter">
+            <summary>
+            Stores the resource name 'XpsFilesFilter'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.Zero">
+            <summary>
+            Stores the resource name 'Zero'.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.SR.ResourceNames.Zoom">
+            <summary>
+            Stores the resource name 'Zoom'.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.WrapPanel">
+            <summary>
+            WrapPanel alternative implementation used both for WPF and Silverlight. 
+            See MSDN: http://msdn.microsoft.com/en-us/library/system.windows.controls.wrappanel.aspx
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.WrapPanel.#ctor">
+            <summary>
+            Initializes a new instance of the WrapPanel class.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.WrapPanel.OrientationProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.Primitives.WrapPanel.Orientation"/> dependency property.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.WrapPanel.Orientation">
+            <summary>
+            Determines the WrapPanel orientation.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.XamReportViewer">
+            <summary>
+            Represents the Report Viewer control.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.XamReportViewer.ZoomScaleProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.XamReportViewer.ZoomScale"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.XamReportViewer.PageMarginProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.XamReportViewer.PageMargin"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.XamReportViewer.PageFitProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.XamReportViewer.PageFit"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.XamReportViewer.AutoRenderProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.XamReportViewer.AutoRender"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.XamReportViewer.RenderSettingsProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.XamReportViewer.RenderSettings"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.XamReportViewer.CurrentPageProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.XamReportViewer.CurrentPage"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.XamReportViewer.ToolBarSettingsProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.XamReportViewer.ToolBarSettings"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.XamReportViewer.EmbeddedFontsProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.XamReportViewer.EmbeddedFonts"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.XamReportViewer.ParametersProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.XamReportViewer.Parameters"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.XamReportViewer.IsParametersPaneVisibleProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.XamReportViewer.IsParametersPaneVisible"/> dependency property
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.XamReportViewer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.XamReportViewer"/> class.
+            </summary>        
+        </member>
+        <member name="M:Infragistics.Controls.Reports.XamReportViewer.CreateExporter(System.Uri)">
+            <summary>
+            Creates an exporter so that arbitrary reports can be rendered independently of the report being shown
+            on the viewer. Please note that the viewer must remain on the visual tree in order for the export to
+            work properly.
+            </summary>
+            <param name="definitionUri">The definition URI.</param>
+            <returns>Exporter.</returns>        
+        </member>
+        <member name="M:Infragistics.Controls.Reports.XamReportViewer.CreateExporter(System.IO.Stream)">
+            <summary>
+            Creates an exporter so that arbitrary reports can be rendered independently of the report being shown
+            on the viewer. Please note that the viewer must remain on the visual tree in order for the export to
+            work properly.
+            </summary>
+            <param name="definitionStream">The definition stream.</param>
+            <returns>Exporter.</returns>        
+        </member>
+        <member name="M:Infragistics.Controls.Reports.XamReportViewer.CreateExporter(System.Uri,System.Uri)">
+            <summary>
+            Creates an exporter so that arbitrary reports can be rendered independently of the report being shown
+            on the viewer. Please note that the viewer must remain on the visual tree in order for the export to
+            work properly.
+            </summary>
+            <param name="definitionUri">The definition URI.</param>
+            <param name="serviceEndpointDefinitionUri">The service endpoint definition URI.</param>
+            <returns>Exporter.</returns>        
+        </member>
+        <member name="M:Infragistics.Controls.Reports.XamReportViewer.Export(System.IO.Stream,System.String)">
+            <param name="renderingFormat">The rendering format (PDF, XLS, XLSX).</param>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.XamReportViewer.CancelExport">
+            <summary>
+            Cancels the export process.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.XamReportViewer.RenderReport">
+            <summary>
+            Renders the report for the first time. This brings the parameters prompt if the values of parameters are not set by the user.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.XamReportViewer.Refresh">
+            <summary>
+            Refreshes the report.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.XamReportViewer.Cancel">
+            <summary>
+            Cancels rendering of the report.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.XamReportViewer.MoveToFirstPage">
+            <summary>
+            Moves to first page.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.XamReportViewer.MoveToLastPage">
+            <summary>
+            Moves to last page.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.XamReportViewer.MoveToNextPage">
+            <summary>
+            Moves to next page.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.XamReportViewer.MoveToPreviousPage">
+            <summary>
+            Moves to previous page.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.XamReportViewer.FitToWidth">
+            <summary>
+            Fits to width.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.XamReportViewer.FitToPage">
+            <summary>
+            Fits to page.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.XamReportViewer.OnApplyTemplate">
+            <summary>
+            When overridden in a derived class, is invoked whenever application code or internal processes call <see cref="!:System.Windows.FrameworkElement.ApplyTemplate"/>.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.XamReportViewer.Repaginate(Infragistics.Controls.Reports.PageSettings)">
+            <summary>
+            Rerenders the report with the specified page settings.
+            </summary>
+            <param name="pageSettings">The page settings.</param>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.XamReportViewer.GetCurrentPageSettings">
+            <summary>
+            Gets the current Page Settings for the rendered report.
+            </summary>
+            <returns>The page settings.</returns>        
+        </member>
+        <member name="M:Infragistics.Controls.Reports.XamReportViewer.PrintWithDialog">
+            <summary>
+            Prints the currently loaded report using the standard Print Dialog.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.XamReportViewer.ChildWindowStyleProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.XamReportViewer.ChildWindowStyle"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.XamReportViewer.ConfirmationDialogStyleProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.XamReportViewer.ConfirmationDialogStyle"/> dependency property
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.XamReportViewer.ZoomScaleChanged">
+            <summary>
+            Event raised when ZoomScale is changed.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.XamReportViewer.ReportProcessingRequested">
+            <summary>
+            Event raised when ProcessReport is called.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.XamReportViewer.ReportParametersProcessingError">
+            <summary>
+            Event raised when there are errors while loading parameters.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.XamReportViewer.ReportParametersSubmit">
+            <summary>
+            Event raised when the user submits the parameters.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.XamReportViewer.RenderingError">
+            <summary>
+            Event raised when there is an error while rendering a page.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.XamReportViewer.ExportStarted">
+            <summary>
+            Event raised when report exporting is started.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.XamReportViewer.ExportCompleted">
+            <summary>
+            Event raised when report exporting is finished.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.XamReportViewer.ExportCanceled">
+            <summary>
+            Event raised when report exporting is canceled.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.XamReportViewer.ExportProgress">
+            <summary>
+            Event raised when there is progress while exporting.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.XamReportViewer.ProcessingStarted">
+            <summary>
+            Event raised when report processing has started.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.XamReportViewer.ProcessingProgress">
+            <summary>
+            Event raised when report processing has generated more pages.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.XamReportViewer.ProcessingCanceled">
+            <summary>
+            Event raised when report processing is canceled.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.XamReportViewer.ProcessingCompleted">
+            <summary>
+            Event raised when report processing is finished.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.XamReportViewer.PrintStarted">
+            <summary>
+            Event raised when report printing is started.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.XamReportViewer.PrintFinished">
+            <summary>
+            Event raised when report printing is finished.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.XamReportViewer.AvailableExportFormats">
+            <summary>
+            Available formats for exporting.
+            </summary>        
+        </member>
+        <member name="P:Infragistics.Controls.Reports.XamReportViewer.ZoomScale">
+            <summary>
+            Gets or sets the Zoom scale, in percentage.
+            </summary>
+            <value>The new Zoom scale.</value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.XamReportViewer.RenderSettings">
+            <summary>
+            Gets or sets the Render Settings.
+            </summary>
+            <value>The new Render Settings.</value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.XamReportViewer.ToolBarSettings">
+            <summary>
+            Gets or sets the Toolbar Settings.
+            </summary>
+            <value>The new Toolbar Settings.</value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.XamReportViewer.AutoRender">
+            <summary>
+            Gets or sets report auto rendering.
+            </summary>
+            <value><c>true</c> to render reports automatically, otherwise <c>false</c>.</value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.XamReportViewer.PageFit">
+            <summary>
+            Gets or sets the Page Fit attribute.
+            </summary>
+            <value>PageFit.Page to fit to page, PageFit.Width to fit to width, PageFit.ZoomScale otherwise. Changing the Zoom sets PageFit to PageFit.ZoomScale.</value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.XamReportViewer.PageMargin">
+            <summary>
+            Gets or sets the Page Margin.
+            </summary>
+            <value>The new page margin.</value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.XamReportViewer.CurrentPage">
+            <summary>
+            Gets or sets the Current Page number. Setting the page number before loading a report has no effect.
+            </summary>
+            <value>The page to set.</value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.XamReportViewer.EmbeddedFonts">
+            <summary>
+            Gets or sets Embedded Fonts for being able to use font embedding while exporting to PDF/XPS (Excel does not support font embedding). These fonts are not used in the viewer.
+            </summary>
+            <value>The page to set.</value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.XamReportViewer.Parameters">
+            <summary>
+            Gets or sets the parameters collection to be provided to the report, if any.
+            </summary>
+            <value>
+            The parameters.
+            </value>        
+        </member>
+        <member name="P:Infragistics.Controls.Reports.XamReportViewer.IsParametersPaneVisible">
+            <summary>
+            If false, hides the Parameters pane in order to process report inmediately if possible. If not all parameters are set, a report processing error will occur.
+            </summary>
+            <value>
+            If Parameters pane is hidden or not.
+            </value>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.XamReportViewer.PrintPreparingStarted">
+            <summary>
+            Event raised when report printing preparing is started.
+            </summary>
+        </member>
+        <member name="E:Infragistics.Controls.Reports.XamReportViewer.PrintPreparingFinished">
+            <summary>
+            Event raised when report printing preparing is finished.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.XamReportViewer.ChildWindowStyle">
+            <summary>
+            Gets / sets the <see cref="T:System.Windows.Style"/> to be used in any <see cref="T:System.Windows.Controls.ChildWindow"/> referenced by the report viewer.
+            </summary>
+            <value><see cref="T:System.Windows.Style"/> for any <see cref="T:System.Windows.Controls.ChildWindow"/> in the report viewer.</value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.XamReportViewer.ConfirmationDialogStyle">
+            <summary>
+            Gets / sets the <see cref="T:System.Windows.Style"/> to be used in any <see cref="T:Infragistics.Controls.Reports.Primitives.ConfirmationDialog"/> referenced by the report viewer.
+            </summary>
+            <value><see cref="T:System.Windows.Style"/> for any <see cref="T:Infragistics.Controls.Reports.Primitives.ConfirmationDialog"/> in the report viewer.</value>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.ParameterCollection">
+            <summary>
+            Parameter object collection.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.ErrorState">
+            <summary>
+            Class that encapsulates the errors that may occur inside the Report Viewer. It contains the error message, associated errors or exception and the severity of the error state. 
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ErrorState.IsFatal">
+            <summary>
+            Gets a value indicating whether this error state is fatal.
+            </summary>
+            <value>
+            <c>true</c> if this error state is fatal; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ErrorState.Message">
+            <summary>
+            Gets the error message.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ErrorState.Detail">
+            <summary>
+            Gets the detail message for the error.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ErrorState.HasDetail">
+            <summary>
+            Gets a value indicating whether this instance has detail information for the error.
+            </summary>
+            <value>
+            <c>true</c> if this instance has detail information; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ErrorState.Errors">
+            <summary>
+            Gets the list of errors that had ocurred.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ErrorState.Exception">
+            <summary>
+            Gets the exception that had occurred.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.ErrorState.ExceptionDetail">
+            <summary>
+            Gets the exception detail.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.PageFit">
+            <summary>
+            Enumeration which lists how is the page to be fitted inside of the report viewer.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.PageFit.ZoomScale">
+            <summary>
+            Zoom is controlled by the ZoomScale property on the viewer.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.PageFit.Width">
+            <summary>
+            Set the zoom so that the entire page is fitted.
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.PageFit.Page">
+            <summary>
+            Set the zoom so that the width of the page is fitted.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.PrintFinishedEventArgs">
+            <summary>
+            Event argument for the PrintFinished event.
+            </summary>    
+        </member>
+        <member name="P:Infragistics.Controls.Reports.PrintFinishedEventArgs.Error">
+            <summary>
+            Returns the error that caused the printing process to be aborted. If no error occurred, returned value is null.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.PrintFinishedEventArgs.Canceled">
+            <summary>
+            Returns <c>true</c> if the printing process was cancelled, <c>false</c> otherwise.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.ReportViewerException">
+            <summary>
+            Class that encapsulates report viewer exceptions.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.ReportViewerException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.ReportViewerException"/> class.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.ReportViewerException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.ReportViewerException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.ReportViewerException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.ReportViewerException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="exception">The exception.</param>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.ReportViewerToolBar">
+            <summary>
+            Report Viewer's toolbar control
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.ReportViewerToolBar.ViewerProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.Primitives.ReportViewerToolBar.Viewer"/> dependency property
+            </summary>
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.ReportViewerToolBar.ToolBarSettingsProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.Primitives.ReportViewerToolBar.ToolBarSettings"/> dependency property
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ReportViewerToolBar.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Infragistics.Controls.Reports.Primitives.ReportViewerToolBar"/> class.
+            </summary>
+        </member>
+        <member name="M:Infragistics.Controls.Reports.Primitives.ReportViewerToolBar.OnApplyTemplate">
+            <summary>
+            When overridden in a derived class, is invoked whenever application code or internal processes call <see cref="M:System.Windows.FrameworkElement.ApplyTemplate"/>.
+            </summary>        
+        </member>
+        <member name="F:Infragistics.Controls.Reports.Primitives.ReportViewerToolBar.PageSettingsDialogStyleProperty">
+            <summary>
+            Identifies the <see cref="P:Infragistics.Controls.Reports.Primitives.ReportViewerToolBar.PageSettingsDialogStyle"/> dependency property
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportViewerToolBar.Viewer">
+            <summary>
+            Gets or sets the viewer associated with the toolbar.
+            </summary>
+            <value>
+            The viewer.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportViewerToolBar.ToolBarSettings">
+            <summary>
+            Gets or sets the toolbar settings.
+            </summary>
+            <value>
+            The toolbar settings.
+            </value>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ReportViewerToolBar.PageSettingsDialogStyle">
+            <summary>
+            Gets / sets the <see cref="T:System.Windows.Style"/> to be used in the <see cref="T:Infragistics.Controls.Reports.Primitives.PageSettingsDialog"/>.
+            </summary>
+            <value><see cref="T:System.Windows.Style"/> for the <see cref="T:Infragistics.Controls.Reports.Primitives.PageSettingsDialog"/>.</value>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.PrintPreparingFinishedEventArgs">
+            <summary>
+            Event argument for the PrintPreparingFinished event.
+            </summary>    
+        </member>
+        <member name="P:Infragistics.Controls.Reports.PrintPreparingFinishedEventArgs.Error">
+            <summary>
+            Gets the error that caused the printing preparing process to be aborted. If no error occurred, returned value is null.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.PrintPreparingFinishedEventArgs.Canceled">
+            <summary>
+            Returns <c>true</c> if the printing preparing process was cancelled, <c>false</c> otherwise.
+            </summary>
+        </member>
+        <member name="T:Infragistics.Controls.Reports.Primitives.ZOrderChangedEventArgs">
+            <summary>
+            Event args raised when an <see cref="T:Infragistics.Controls.Reports.Primitives.OverflowDialog"/> changes its ZOrder.
+            </summary>
+        </member>
+        <member name="P:Infragistics.Controls.Reports.Primitives.ZOrderChangedEventArgs.IsTopmost">
+            <summary>
+            Gets / sets if the current <see cref="T:Infragistics.Controls.Reports.Primitives.OverflowDialog"/> is the top most.
+            </summary>
+        </member>
+    </members>
+</doc>

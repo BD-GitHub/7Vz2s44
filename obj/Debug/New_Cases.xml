@@ -1,0 +1,115 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+New_Cases
+</name>
+</assembly>
+<members>
+<member name="T:New_Cases.TssDataSet.tblNotEligibleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:New_Cases.TssDataSet.tblNotEligibleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:New_Cases.TssDataSet.tblNotEligibleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:New_Cases.TssDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:New_Cases.TssDataSetTableAdapters.tblNotEligibleTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:New_Cases.TssDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(New_Cases.TssDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:New_Cases.TssDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(New_Cases.TssDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:New_Cases.TssDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(New_Cases.TssDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:New_Cases.TssDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:New_Cases.TssDataSetTableAdapters.TableAdapterManager.UpdateAll(New_Cases.TssDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:New_Cases.TssDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:New_Cases.TssDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:New_Cases.TssDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:New_Cases.TssDataSet1.tblCourtRecordDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:New_Cases.TssDataSet1.tblCourtRecordRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:New_Cases.TssDataSet1.tblCourtRecordRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:New_Cases.TssDataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:New_Cases.TssDataSet1TableAdapters.tblCourtRecordTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:New_Cases.TssDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(New_Cases.TssDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:New_Cases.TssDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(New_Cases.TssDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:New_Cases.TssDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(New_Cases.TssDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:New_Cases.TssDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:New_Cases.TssDataSet1TableAdapters.TableAdapterManager.UpdateAll(New_Cases.TssDataSet1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:New_Cases.TssDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:New_Cases.TssDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:New_Cases.TssDataSet1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TssDataSet" targetNamespace="http://tempuri.org/TssDataSet.xsd" xmlns:mstns="http://tempuri.org/TssDataSet.xsd" xmlns="http://tempuri.org/TssDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="TssNotEligConnect" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TssNotEligConnect (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.New_Cases.My.MySettings.GlobalReference.Default.TssNotEligConnect" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblNotEligibleTableAdapter" GeneratorDataComponentClassName="tblNotEligibleTableAdapter" Name="tblNotEligible" UserDataComponentName="tblNotEligibleTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TssNotEligConnect (MySettings)" DbObjectName="Tss.dbo.tblNotEligible" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT dtmRunDate, strNewCasenum, strDrlicnum, dtmNewOfnDate, strMatchCasenum, dtmMatchOfnDate, strCnLName, strCnFName, strCnMName, strCnAdress1, strCnAdress2, strCnCity, strCnState, strCnZip, dtmCnDob, strCnSex, strCnBranch, strCnMuni, dtmCnReturnDate FROM dbo.tblNotEligible ORDER BY dtmRunDate DESC</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="dtmRunDate" DataSetColumn="dtmRunDate" />
+              <Mapping SourceColumn="strNewCasenum" DataSetColumn="strNewCasenum" />
+              <Mapping SourceColumn="strDrlicnum" DataSetColumn="strDrlicnum" />
+              <Mapping SourceColumn="dtmNewOfnDate" DataSetColumn="dtmNewOfnDate" />
+              <Mapping SourceColumn="strMatchCasenum" DataSetColumn="strMatchCasenum" />
+              <Mapping SourceColumn="dtmMatchOfnDate" DataSetColumn="dtmMatchOfnDate" />
+              <Mapping SourceColumn="strCnLName" DataSetColumn="strCnLName" />
+              <Mapping SourceColumn="strCnFName" DataSetColumn="strCnFName" />
+              <Mapping SourceColumn="strCnMName" DataSetColumn="strCnMName" />
+              <Mapping SourceColumn="strCnAdress1" DataSetColumn="strCnAdress1" />
+              <Mapping SourceColumn="strCnAdress2" DataSetColumn="strCnAdress2" />
+              <Mapping SourceColumn="strCnCity" DataSetColumn="strCnCity" />
+              <Mapping SourceColumn="strCnState" DataSetColumn="strCnState" />
+              <Mapping SourceColumn="strCnZip" DataSetColumn="strCnZip" />
+              <Mapping SourceColumn="dtmCnDob" DataSetColumn="dtmCnDob" />
+              <Mapping SourceColumn="strCnSex" DataSetColumn="strCnSex" />
+              <Mapping SourceColumn="strCnBranch" DataSetColumn="strCnBranch" />
+              <Mapping SourceColumn="strCnMuni" DataSetColumn="strCnMuni" />
+              <Mapping SourceColumn="dtmCnReturnDate" DataSetColumn="dtmCnReturnDate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TssDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="TssDataSet" msprop:Generator_UserDSName="TssDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblNotEligible" msprop:Generator_TableClassName="tblNotEligibleDataTable" msprop:Generator_TableVarName="tabletblNotEligible" msprop:Generator_RowChangedName="tblNotEligibleRowChanged" msprop:Generator_TablePropName="tblNotEligible" msprop:Generator_RowDeletingName="tblNotEligibleRowDeleting" msprop:Generator_RowChangingName="tblNotEligibleRowChanging" msprop:Generator_RowEvHandlerName="tblNotEligibleRowChangeEventHandler" msprop:Generator_RowDeletedName="tblNotEligibleRowDeleted" msprop:Generator_RowClassName="tblNotEligibleRow" msprop:Generator_UserTableName="tblNotEligible" msprop:Generator_RowEvArgName="tblNotEligibleRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="dtmRunDate" msprop:Generator_ColumnVarNameInTable="columndtmRunDate" msprop:Generator_ColumnPropNameInRow="dtmRunDate" msprop:Generator_ColumnPropNameInTable="dtmRunDateColumn" msprop:Generator_UserColumnName="dtmRunDate" type="xs:dateTime" />
+              <xs:element name="strNewCasenum" msprop:Generator_ColumnVarNameInTable="columnstrNewCasenum" msprop:Generator_ColumnPropNameInRow="strNewCasenum" msprop:Generator_ColumnPropNameInTable="strNewCasenumColumn" msprop:Generator_UserColumnName="strNewCasenum">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="strDrlicnum" msprop:Generator_ColumnVarNameInTable="columnstrDrlicnum" msprop:Generator_ColumnPropNameInRow="strDrlicnum" msprop:Generator_ColumnPropNameInTable="strDrlicnumColumn" msprop:Generator_UserColumnName="strDrlicnum">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dtmNewOfnDate" msprop:Generator_ColumnVarNameInTable="columndtmNewOfnDate" msprop:Generator_ColumnPropNameInRow="dtmNewOfnDate" msprop:Generator_ColumnPropNameInTable="dtmNewOfnDateColumn" msprop:Generator_UserColumnName="dtmNewOfnDate" type="xs:dateTime" />
+              <xs:element name="strMatchCasenum" msprop:Generator_ColumnVarNameInTable="columnstrMatchCasenum" msprop:Generator_ColumnPropNameInRow="strMatchCasenum" msprop:Generator_ColumnPropNameInTable="strMatchCasenumColumn" msprop:Generator_UserColumnName="strMatchCasenum">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dtmMatchOfnDate" msprop:Generator_ColumnVarNameInTable="columndtmMatchOfnDate" msprop:Generator_ColumnPropNameInRow="dtmMatchOfnDate" msprop:Generator_ColumnPropNameInTable="dtmMatchOfnDateColumn" msprop:Generator_UserColumnName="dtmMatchOfnDate" type="xs:dateTime" />
+              <xs:element name="strCnLName" msprop:Generator_ColumnVarNameInTable="columnstrCnLName" msprop:Generator_ColumnPropNameInRow="strCnLName" msprop:Generator_ColumnPropNameInTable="strCnLNameColumn" msprop:Generator_UserColumnName="strCnLName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="21" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="strCnFName" msprop:Generator_ColumnVarNameInTable="columnstrCnFName" msprop:Generator_ColumnPropNameInRow="strCnFName" msprop:Generator_ColumnPropNameInTable="strCnFNameColumn" msprop:Generator_UserColumnName="strCnFName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="14" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="strCnMName" msprop:Generator_ColumnVarNameInTable="columnstrCnMName" msprop:Generator_ColumnPropNameInRow="strCnMName" msprop:Generator_ColumnPropNameInTable="strCnMNameColumn" msprop:Generator_UserColumnName="strCnMName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="strCnAdress1" msprop:Generator_ColumnVarNameInTable="columnstrCnAdress1" msprop:Generator_ColumnPropNameInRow="strCnAdress1" msprop:Generator_ColumnPropNameInTable="strCnAdress1Column" msprop:Generator_UserColumnName="strCnAdress1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="39" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="strCnAdress2" msprop:Generator_ColumnVarNameInTable="columnstrCnAdress2" msprop:Generator_ColumnPropNameInRow="strCnAdress2" msprop:Generator_ColumnPropNameInTable="strCnAdress2Column" msprop:Generator_UserColumnName="strCnAdress2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="39" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="strCnCity" msprop:Generator_ColumnVarNameInTable="columnstrCnCity" msprop:Generator_ColumnPropNameInRow="strCnCity" msprop:Generator_ColumnPropNameInTable="strCnCityColumn" msprop:Generator_UserColumnName="strCnCity" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="strCnState" msprop:Generator_ColumnVarNameInTable="columnstrCnState" msprop:Generator_ColumnPropNameInRow="strCnState" msprop:Generator_ColumnPropNameInTable="strCnStateColumn" msprop:Generator_UserColumnName="strCnState" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="strCnZip" msprop:Generator_ColumnVarNameInTable="columnstrCnZip" msprop:Generator_ColumnPropNameInRow="strCnZip" msprop:Generator_ColumnPropNameInTable="strCnZipColumn" msprop:Generator_UserColumnName="strCnZip" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dtmCnDob" msprop:Generator_ColumnVarNameInTable="columndtmCnDob" msprop:Generator_ColumnPropNameInRow="dtmCnDob" msprop:Generator_ColumnPropNameInTable="dtmCnDobColumn" msprop:Generator_UserColumnName="dtmCnDob" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="strCnSex" msprop:Generator_ColumnVarNameInTable="columnstrCnSex" msprop:Generator_ColumnPropNameInRow="strCnSex" msprop:Generator_ColumnPropNameInTable="strCnSexColumn" msprop:Generator_UserColumnName="strCnSex" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="strCnBranch" msprop:Generator_ColumnVarNameInTable="columnstrCnBranch" msprop:Generator_ColumnPropNameInRow="strCnBranch" msprop:Generator_ColumnPropNameInTable="strCnBranchColumn" msprop:Generator_UserColumnName="strCnBranch" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="strCnMuni" msprop:Generator_ColumnVarNameInTable="columnstrCnMuni" msprop:Generator_ColumnPropNameInRow="strCnMuni" msprop:Generator_ColumnPropNameInTable="strCnMuniColumn" msprop:Generator_UserColumnName="strCnMuni" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dtmCnReturnDate" msprop:Generator_ColumnVarNameInTable="columndtmCnReturnDate" msprop:Generator_ColumnPropNameInRow="dtmCnReturnDate" msprop:Generator_ColumnPropNameInTable="dtmCnReturnDateColumn" msprop:Generator_UserColumnName="dtmCnReturnDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
